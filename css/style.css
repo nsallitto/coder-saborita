@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.subrayado{
+    text-decoration: none;
+}
+
+/* ---------------------------------------------HEADER/NAV--------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 6em;
+
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul li{
+    margin: 0 3em;
+    list-style-type: none;
+}
+header nav div {
+    background-color: #a11d1d;
+    width: 6em;
+    height: 6em;
+}
+.logo{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------HOME----------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.home1 {
+    background-image: url(../assets/img/fondoHome.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 30em;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+}
+/* .home1 .home1H2 {
+    margin-top: 10em;
+} */
+.home1 div{
+    display: inline-block;
+    margin-top: 15em;
+    margin-left: 30em;
+}
+.home1 div h2 a{
+   color: white;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.home2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+} 
+.homeDiv{
+    display: inline-block;
+    border: solid rgba(58, 56, 56, 0.932) 0.2em;
+    margin: 2.5em;
+    width: 20em;
+    height: 40em;
+}
+.homeDiv h3{
+    font-size: x-large;
+    text-align: center;
+    margin-top: 1em;
+}
+.homeDiv div{
+    height: 100%;
+    width: 100%;
+}
+.homeDiv div img{
+    object-fit: cover;
+    width: 100%;
+    height: 92%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------FOOTER-------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer a svg{
+    margin: 1em;
+    transition: 1.2s;
+}
+.footer a{
+    transition: 1s;
+}
+.footer a :hover{
+    transform: scale(1.2, 1.2);
+
+
+}
+.pFooter{
+    text-align: center;
+    margin-top: 0.6em;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* -----------------------------------------------SERVICIOS-------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.servicios{
+    display: inline-flex;
+    flex-direction: row;
+    
+}
+.divServicios{
+    display: flex;
+    justify-content: center;
+    border: solid rgba(58, 56, 56, 0.932) 0.2em;
+    margin: 2em;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------GALERIA-------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.galeria{
+    width: 78%;
+    height: 72em;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.galeria div img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.galeria div{
+    height: 20em;
+    width: 26em;
+    margin: 1em;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------PRODUCTOS------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.productos{
+    display: grid;
+    grid-template-areas: 
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto3"
+    "foto6 foto7 foto3";
+    grid-template-columns: 3 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.foto1{
+    grid-area: foto1;
+    border: rgba(58, 56, 56, 0.932) 0.1em;
+}
+.foto2{
+    grid-area: foto2;
+    border: rgba(58, 56, 56, 0.932) 0.1em;
+}
+.foto3{
+    grid-area: foto3;
+    border: rgba(58, 56, 56, 0.932) 0.1em;
+    width: 20em;
+}
+.foto4{
+    grid-area: foto4;
+    border: rgba(58, 56, 56, 0.932) 0.1em;
+}
+.foto5{
+    grid-area: foto5;
+    border: rgba(58, 56, 56, 0.932) 0.1em;
+}.foto6{
+    grid-area: foto6;
+    border: rgba(58, 56, 56, 0.932) 0.1em;
+}.foto7{
+    grid-area: foto7;
+    border: rgba(58, 56, 56, 0.932) 0.1em;
+}
+
+.foto1 div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.foto2 div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.foto3 div img{
+    object-fit: cover;
+    width: 20em;
+    height: 30em;
+}
+.foto4 div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.foto5 div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.foto6 div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.foto7 div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+    
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------CONTACTANOS------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.grilla{
+    display: grid;
+    
+}
+.nav{
+    grid-area: nav;
+}
+.contenido{
+    grid-area: contenido;
+}
+.mapa{
+    grid-area: mapa;
+}
+.pie{
+    grid-area: pie;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form{
+    border: solid rgba(58, 56, 56, 0.932) 0.4em;
+    width: 65%;
+    margin: auto;
+}
+
+/* first mobile */
+
+@media screen and (max-width: 590px) {
+    .grilla{
+        grid-template-columns: 1fr;
+        grid-template-rows: 10em 25em 35em 2em;
+        grid-template-areas: 
+        "nav"
+        "contenido"
+        "mapa"
+        "pie";
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+    .grilla{
+        grid-template-columns: 2 1fr;
+        grid-template-rows: 9em 20em 20em 2em;
+        grid-template-areas: 
+        "nav nav"
+        "contenido mapa"
+        "contenido mapa"
+        "pie pie";
+    }
+    
+}
+
+@media screen and (min-width: 1150px) {
+    .grilla{
+        grid-template-areas: 
+        "nav nav nav"
+        "contenido contenido mapa"
+        "pie pie pie";
+    }
+}
