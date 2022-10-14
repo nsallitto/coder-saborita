@@ -1,0 +1,19 @@
+.galeria{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 65%;
+    height: 65em;
+    margin: auto;
+    border: solid 0.2em black;
+    div{
+        width: 25em;
+        height: 20em; 
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+}

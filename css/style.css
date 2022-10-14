@@ -1,341 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
-    font-size: 5em;
-    text-align: center;
-    margin-top: 0.5em;
+  text-align: center;
+  font-size: 5em;
+  margin-top: 0.5em;
 }
 
 h2 {
-    font-size: 1.8em;
-    text-align: center;
+  text-align: center;
+  font-size: 2em;
+  margin: 1.5em;
 }
 
-.subrayado{
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/* ---------------------------------------------HEADER/NAV--------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
 
 header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 6em;
-
-}
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-header nav ul li{
-    margin: 0 3em;
-    list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  width: 100%;
 }
 header nav div {
-    background-color: #a11d1d;
-    width: 6em;
-    height: 6em;
+  width: 6em;
+  height: 6em;
 }
-.logo{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+header nav div img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  margin: 0 3em;
+  list-style-type: none;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2em;
+  padding: 2em;
+}
+footer div :hover {
+  transform: scale(1.5);
+}
 
-
-/* -------------------------------------------------HOME----------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
+.pFooter {
+  text-align: center;
+  margin: 0.5em;
+}
 
 .home1 {
-    background-image: url(../assets/img/fondoHome.jpg);
-    background-size: contain;
-    width: 100%;
-    height: 30em;
-    margin-top: 2.5em;
-    margin-bottom: 2em;
+  height: 40em;
+  width: 100vw;
+  margin: 2em 0;
 }
-/* .home1 .home1H2 {
-    margin-top: 10em;
-} */
-.home1 div{
-    display: inline-block;
-    margin-top: 15em;
-    margin-left: 30em;
+.home1 img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
-.home1 div h2 a{
-   color: white;
+.home1 div {
+  text-align: center;
+  margin: 1em;
 }
-/* ---------------------------------------------------------------------------------------------------------------- */
+
+.h2Home {
+  margin: 2em;
+  margin-top: 4em;
+}
 
 .home2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-} 
-.homeDiv{
-    display: inline-block;
-    border: solid rgba(58, 56, 56, 0.932) 0.2em;
-    margin: 2.5em;
-    width: 20em;
-    height: 40em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.homeDiv h3{
-    font-size: x-large;
-    text-align: center;
-    margin-top: 1em;
+.home2 .homeDiv {
+  height: 30em;
+  width: 15em;
+  border: solid 0.3em rgba(20, 19, 19, 0.712);
+  padding: 0.3em;
+  border-radius: 0.5em;
+  box-shadow: 0.3em 0.3em rgba(44, 37, 37, 0.103);
 }
-.homeDiv div{
-    height: 100%;
-    width: 100%;
+.home2 .homeDiv div {
+  text-align: center;
+  font-size: x-large;
+  height: 2em;
+  padding: 0 1em;
 }
-.homeDiv div img{
-    object-fit: cover;
-    width: 100%;
-    height: 92%;
-}
-
-/* ---------------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
-
-
-/* --------------------------------------------------FOOTER-------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
-
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.footer a svg{
-    margin: 1em;
-    transition: 1.2s;
-}
-.footer a{
-    transition: 1s;
-}
-.footer a :hover{
-    transform: scale(1.2, 1.2);
-
-
-}
-.pFooter{
-    text-align: center;
-    margin-top: 0.6em;
+.home2 .homeDiv img {
+  object-fit: cover;
+  width: 100%;
+  height: 90%;
+  border-radius: 0.5em;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
-
-
-
-/* -----------------------------------------------SERVICIOS-------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
-
-.servicios{
-    display: inline-flex;
-    flex-direction: row;
-    
+.servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10em;
 }
-.divServicios{
-    display: flex;
-    justify-content: center;
-    border: solid rgba(58, 56, 56, 0.932) 0.2em;
-    margin: 2em;
+.servicios div {
+  border: solid 0.2em;
+  border-radius: 0.5em;
+  box-shadow: 0.3em 0.3em rgba(10, 10, 10, 0.541);
+}
+.servicios div h3 {
+  text-align: center;
+  border-bottom: solid 0.2em;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
-
-
-
-/* -------------------------------------------------GALERIA-------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
-
-.galeria{
-    width: 78%;
-    height: 72em;
-    margin: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+.galeria {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 65%;
+  height: 65em;
+  margin: auto;
+  border: solid 0.2em black;
 }
-.galeria div img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+.galeria div {
+  width: 25em;
+  height: 20em;
 }
-.galeria div{
-    height: 20em;
-    width: 26em;
-    margin: 1em;
+.galeria div img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
+.carta {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: repeat(3 1fr);
+  grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto3" "foto6 foto7 foto3";
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 0.2em;
+}
+.carta .foto1 {
+  border: solid 0.2em rgb(53, 52, 52);
+  border-radius: 0.5em;
+  grid-area: foto1;
+  width: 18em;
+}
+.carta .foto1 img {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+.carta .foto2 {
+  border: solid 0.2em rgb(53, 52, 52);
+  border-radius: 0.5em;
+  grid-area: foto2;
+  width: 18em;
+}
+.carta .foto2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+.carta .foto3 {
+  border: solid 0.2em rgb(53, 52, 52);
+  border-radius: 0.5em;
+  grid-area: foto3;
+  width: 18em;
+}
+.carta .foto3 img {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+.carta .foto4 {
+  border: solid 0.2em rgb(53, 52, 52);
+  border-radius: 0.5em;
+  grid-area: foto4;
+  width: 18em;
+}
+.carta .foto4 img {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+.carta .foto5 {
+  border: solid 0.2em rgb(53, 52, 52);
+  border-radius: 0.5em;
+  grid-area: foto5;
+  width: 18em;
+}
+.carta .foto5 img {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+.carta .foto6 {
+  border: solid 0.2em rgb(53, 52, 52);
+  border-radius: 0.5em;
+  grid-area: foto6;
+  width: 18em;
+}
+.carta .foto6 img {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+.carta .foto7 {
+  border: solid 0.2em rgb(53, 52, 52);
+  border-radius: 0.5em;
+  grid-area: foto7;
+  width: 18em;
+}
+.carta .foto7 img {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+.carta div h3, .carta p {
+  text-align: center;
+}
 
+.contacto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2em;
+}
+.contacto section {
+  border: solid 0.2em black;
+  height: 30em;
+  width: 30em;
+}
+.contacto section h2 {
+  margin: 0;
+}
+.contacto section form {
+  margin: 0.5em;
+}
+.contacto section form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto section form div label {
+  font-size: small;
+}
+.contacto section form div input {
+  width: 20em;
+  height: 1.5em;
+  margin: auto;
+  border: solid 0.5 black;
+}
+.contacto section form div .boton {
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+}
+.contacto section iframe {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 
-/* ---------------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
+.grilla {
+  display: grid;
+  grid-template-rows: 3 5em, 20em, 5em;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-areas: "nav nav nav" "contacto contacto contacto" "pie pie pie";
+}
+.grilla .nav {
+  grid-area: nav;
+}
+.grilla .contacto {
+  grid-area: contacto;
+}
+.grilla .pie {
+  grid-area: pie;
+}
 
-
-
-/* ------------------------------------------------PRODUCTOS------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
-
-.productos{
+@media screen and (max-width: 767px) {
+  .grilla {
     display: grid;
-    grid-template-areas: 
-    "foto1 foto2 foto3"
-    "foto4 foto5 foto3"
-    "foto6 foto7 foto3";
-    grid-template-columns: 3 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
+    grid-template-rows: 2em, 10em, 2em;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "contacto" "pie";
+  }
 }
-.foto1{
-    grid-area: foto1;
-    border: rgba(58, 56, 56, 0.932) 0.1em;
-}
-.foto2{
-    grid-area: foto2;
-    border: rgba(58, 56, 56, 0.932) 0.1em;
-}
-.foto3{
-    grid-area: foto3;
-    border: rgba(58, 56, 56, 0.932) 0.1em;
-    width: 20em;
-}
-.foto4{
-    grid-area: foto4;
-    border: rgba(58, 56, 56, 0.932) 0.1em;
-}
-.foto5{
-    grid-area: foto5;
-    border: rgba(58, 56, 56, 0.932) 0.1em;
-}.foto6{
-    grid-area: foto6;
-    border: rgba(58, 56, 56, 0.932) 0.1em;
-}.foto7{
-    grid-area: foto7;
-    border: rgba(58, 56, 56, 0.932) 0.1em;
-}
-
-.foto1 div img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.foto2 div img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.foto3 div img{
-    object-fit: cover;
-    width: 20em;
-    height: 30em;
-}
-.foto4 div img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.foto5 div img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.foto6 div img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.foto7 div img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-    
-
-/* ---------------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
-
-
-
-/* ----------------------------------------------CONTACTANOS------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------------- */
-
-.grilla{
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  .grilla {
     display: grid;
-    
+    grid-template-rows: 3 2em, 15em, 2em;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas: "nav nav" "contacto contacto" "pie pie";
+  }
 }
-.nav{
-    grid-area: nav;
-}
-.contenido{
-    grid-area: contenido;
-}
-.mapa{
-    grid-area: mapa;
-}
-.pie{
-    grid-area: pie;
-}
-
-form div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-form{
-    border: solid rgba(58, 56, 56, 0.932) 0.4em;
-    width: 65%;
-    margin: auto;
+@media screen and (min-width: 1101px) {
+  .grilla {
+    display: grid;
+    grid-template-rows: 3 5em, 20em, 5em;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-areas: "nav nav nav" "contacto contacto contacto" "pie pie pie";
+  }
 }
 
-/* first mobile */
-
-@media screen and (max-width: 590px) {
-    .grilla{
-        grid-template-columns: 1fr;
-        grid-template-rows: 10em 25em 35em 2em;
-        grid-template-areas: 
-        "nav"
-        "contenido"
-        "mapa"
-        "pie";
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 1100px) {
-    .grilla{
-        grid-template-columns: 2 1fr;
-        grid-template-rows: 9em 20em 20em 2em;
-        grid-template-areas: 
-        "nav nav"
-        "contenido mapa"
-        "contenido mapa"
-        "pie pie";
-    }
-    
-}
-
-@media screen and (min-width: 1150px) {
-    .grilla{
-        grid-template-areas: 
-        "nav nav nav"
-        "contenido contenido mapa"
-        "pie pie pie";
-    }
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,139 @@
+
+.contacto{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2em;
+    section{
+        border: solid 0.2em black;
+        height: 30em;
+        width: 30em;
+        h2{
+            margin: 0;
+        }
+        form{
+          margin: 0.5em;
+          div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            label{
+                font-size: small;
+            }
+            input{
+                width: 20em;
+                height: 1.5em;
+                margin: auto;
+                border: solid 0.5 black
+            }
+            .boton{
+                border-radius: 0.5em;
+                margin-top: 0.5em;
+            }
+          }
+        }
+        iframe{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+    }
+}
+
+
+.grilla{
+    display: grid;
+    grid-template-rows: 3 5em, 20em, 5em;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-areas: 
+    "nav nav nav"
+    "contacto contacto contacto"
+    "pie pie pie";
+    .nav{
+        grid-area: nav;
+    }
+    .contacto{
+        grid-area: contacto;
+    }
+    .pie{
+        grid-area: pie;
+    }
+}
+
+// RESPONSIVE//
+
+@media screen and (max-width: 767px) {
+    .grilla{
+        display: grid;
+        grid-template-rows: 2em, 10em, 2em;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "nav"
+        "contacto"
+        "pie";
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1100px) {
+    .grilla{
+        display: grid;
+        grid-template-rows: 3 2em, 15em, 2em;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: 
+        "nav nav"
+        "contacto contacto"
+        "pie pie";
+
+    }
+}
+@media screen and (min-width: 1101px){
+    .grilla{
+        display:grid;
+        grid-template-rows: 3 5em, 20em, 5em;
+        grid-template-columns: repeat(3 1fr);
+        grid-template-areas: 
+        "nav nav nav"
+        "contacto contacto contacto"
+        "pie pie pie";
+    }
+    
+}
+
+
+
+
+// /* first mobile */
+
+// @media screen and (max-width: 590px) {
+//     .grilla{
+//         grid-template-columns: 1fr;
+//         grid-template-rows: 4em 10em 50em 2em;
+//         grid-template-areas: 
+//         "nav"
+//         "contenido"
+//         "mapa"
+//         "pie";
+//     }
+// }
+
+// @media screen and (min-width: 600px) and (max-width: 1100px) {
+//     .grilla{
+//         grid-template-columns: 2 1fr;
+//         grid-template-rows: 9em 20em 20em 2em;
+//         grid-template-areas: 
+//         "nav nav"
+//         "contenido mapa"
+//         "contenido mapa"
+//         "pie pie";
+//     }
+    
+// }
+
+// @media screen and (min-width: 1150px) {
+//     .grilla{
+//         grid-template-areas: 
+//         "nav nav nav"
+//         "contenido contenido mapa"
+//         "pie pie pie";
+//     }
+// }

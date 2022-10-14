@@ -1,0 +1,14 @@
+footer {
+    div{
+        @include flex (row, space-evenly, center);
+        margin: 2em;
+        padding: 2em;
+    }
+    div :hover{
+        transform: scale(1.5);
+    }
+}
+.pFooter {
+    text-align: center;
+    margin: 0.5em;
+}

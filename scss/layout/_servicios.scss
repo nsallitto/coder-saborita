@@ -1,0 +1,14 @@
+.servicios{
+    @include flex (row, space-evenly, center);
+    margin-top: 10em;
+    div{
+        border: solid 0.2em;
+        border-radius: 0.5em;
+        box-shadow: 0.3em 0.3em rgba(10, 10, 10, 0.541);
+        h3{
+            text-align: center;
+            border-bottom: solid 0.2em;
+            
+        }
+    }
+}  
