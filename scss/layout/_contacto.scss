@@ -1,139 +1,68 @@
-
-.contacto{
-    display:flex;
-    justify-content: space-evenly;
+.flex-container{
+    display: flex;
     align-items: center;
-    margin: 2em;
-    section{
-        border: solid 0.2em black;
-        height: 30em;
-        width: 30em;
-        h2{
-            margin: 0;
+    flex-flow: wrap;
+    justify-content: center;
+    background-color: #283d3e;
+    margin: 4em;
+    form {
+        text-align: center;
+        width: 50%;
+        padding: 0.5em;
+        .form-input{
+            width: 60%;
+            padding: 0.2em;
+            margin: 0.1em;
+            border: none;
+            border-bottom: 0.1em solid red;
+            background: linear-gradient(to bottom, transparent, #48586f);
         }
-        form{
-          margin: 0.5em;
-          div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            label{
-                font-size: small;
-            }
-            input{
-                width: 20em;
-                height: 1.5em;
-                margin: auto;
-                border: solid 0.5 black
-            }
-            .boton{
-                border-radius: 0.5em;
-                margin-top: 0.5em;
-            }
-          }
+        .form-input:hover{
+            background-color: aqua;
+            outline: none;
+            border-bottom: 0.1em solid rgb(22, 6, 6);
         }
+        .enviar{
+            background-color: #48586f;
+            border-bottom: none;
+            padding: 0.5em;
+        }
+        textarea{
+            min-height: 8em;
+            resize: none;
+        }
+    }
+    .form-img{
+        width: 50%;
+        display: flex;
+        padding: 2em; 
         iframe{
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
+            width: 90%;
+            margin: auto;
         }
-
     }
 }
 
 
-.grilla{
-    display: grid;
-    grid-template-rows: 3 5em, 20em, 5em;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-areas: 
-    "nav nav nav"
-    "contacto contacto contacto"
-    "pie pie pie";
-    .nav{
-        grid-area: nav;
-    }
-    .contacto{
-        grid-area: contacto;
-    }
-    .pie{
-        grid-area: pie;
-    }
-}
-
-// RESPONSIVE//
-
-@media screen and (max-width: 767px) {
-    .grilla{
-        display: grid;
-        grid-template-rows: 2em, 10em, 2em;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "nav"
-        "contacto"
-        "pie";
-    }
-}
-@media screen and (min-width: 768px) and (max-width:1100px) {
-    .grilla{
-        display: grid;
-        grid-template-rows: 3 2em, 15em, 2em;
-        grid-template-columns: repeat(2 1fr);
-        grid-template-areas: 
-        "nav nav"
-        "contacto contacto"
-        "pie pie";
-
-    }
-}
-@media screen and (min-width: 1101px){
-    .grilla{
-        display:grid;
-        grid-template-rows: 3 5em, 20em, 5em;
-        grid-template-columns: repeat(3 1fr);
-        grid-template-areas: 
-        "nav nav nav"
-        "contacto contacto contacto"
-        "pie pie pie";
+@media only screen and (max-width: 880px) {
+    .flex-container{
+        @include flex (column, center, center);
+        width: 100%;
+        form{
+            width: 100%;
+            .form-input{
+                width: 100%;
+            }
+        }
+        .form-img{
+            width: 100%;
+            margin: 0;
+            padding: 0.2em;
+            iframe{
+                width: 100%;
+            }
+        }
     }
     
 }
 
-
-
-
-// /* first mobile */
-
-// @media screen and (max-width: 590px) {
-//     .grilla{
-//         grid-template-columns: 1fr;
-//         grid-template-rows: 4em 10em 50em 2em;
-//         grid-template-areas: 
-//         "nav"
-//         "contenido"
-//         "mapa"
-//         "pie";
-//     }
-// }
-
-// @media screen and (min-width: 600px) and (max-width: 1100px) {
-//     .grilla{
-//         grid-template-columns: 2 1fr;
-//         grid-template-rows: 9em 20em 20em 2em;
-//         grid-template-areas: 
-//         "nav nav"
-//         "contenido mapa"
-//         "contenido mapa"
-//         "pie pie";
-//     }
-    
-// }
-
-// @media screen and (min-width: 1150px) {
-//     .grilla{
-//         grid-template-areas: 
-//         "nav nav nav"
-//         "contenido contenido mapa"
-//         "pie pie pie";
-//     }
-// }

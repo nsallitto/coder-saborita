@@ -1,19 +1,22 @@
 .galeria{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 65%;
-    height: 65em;
-    margin: auto;
-    border: solid 0.2em black;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
     div{
-        width: 25em;
-        height: 20em; 
+        height: 45vh;
+        width: 30em;
+        margin: 0.5em;
         img{
             object-fit: cover;
-            height: 100%;
             width: 100%;
+            height: 100%;
         }
     }
+}
 
+@media only screen and (max-width: 880px) {
+    .galeria{
+        @include flex (column, center, center);
+    }
 }

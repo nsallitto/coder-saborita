@@ -95,5 +95,94 @@
     }
     div h3, p{
         text-align: center;
+        
     }
+
 }   
+
+@media only screen and (max-width: 880px){
+    .carta{
+        @include flex (column, center, center);
+        .foto1 {
+            border: solid 0.2em rgb(53, 52, 52);
+            border-radius: 0.5em;
+            width: 50vw;
+            height: 20em;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 50%;
+            }
+        }
+        .foto2 {
+            border: solid 0.2em rgb(53, 52, 52);
+            border-radius: 0.5em;
+            width: 50vw;
+            height: 20em;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 50%;
+            }
+        }
+        .foto3 {
+            border: solid 0.2em rgb(53, 52, 52);
+            border-radius: 0.5em;
+            width: 50vw;
+            height: 20em;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 50%;
+            }
+        }
+        .foto4 {
+            border: solid 0.2em rgb(53, 52, 52);
+            border-radius: 0.5em;
+            width: 50vw;
+            height: 20em;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 50%;
+            }
+        }
+        .foto5 {
+            border: solid 0.2em rgb(53, 52, 52);
+            border-radius: 0.5em;
+            width: 50vw;
+            height: 20em;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 50%;
+            }
+        }
+        .foto6 {
+            border: solid 0.2em rgb(53, 52, 52);
+            border-radius: 0.5em;
+            width: 50vw;
+            height: 20em;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 50%;
+            }
+        }
+        .foto7 {
+            border: solid 0.2em rgb(53, 52, 52);
+            border-radius: 0.5em;
+            width: 50vw;
+            height: 20em;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 50%;
+            }
+        }
+    }
+    .p-Pata{
+        overflow-y: scroll;
+    }
+}
+            
