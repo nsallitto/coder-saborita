@@ -1,9 +1,9 @@
 .flex-container{
     display: flex;
     align-items: center;
-    flex-flow: wrap;
+    flex-wrap: wrap;
     justify-content: center;
-    background-color: #283d3e;
+    background-color: #a39b7e;
     margin: 4em;
     form {
         text-align: center;
@@ -14,18 +14,19 @@
             padding: 0.2em;
             margin: 0.1em;
             border: none;
-            border-bottom: 0.1em solid red;
-            background: linear-gradient(to bottom, transparent, #48586f);
+            border-bottom: 0.1em solid #353437;
+            background: linear-gradient(to bottom, transparent, #e2c99f);
         }
         .form-input:hover{
-            background-color: aqua;
+            background-color: #53576b;
             outline: none;
             border-bottom: 0.1em solid rgb(22, 6, 6);
         }
         .enviar{
-            background-color: #48586f;
+            border-bottom: 0.1em solid #353437;
             border-bottom: none;
             padding: 0.5em;
+            background: linear-gradient(to bottom, transparent, #e2c99f);
         }
         textarea{
             min-height: 8em;
@@ -47,19 +48,22 @@
 @media only screen and (max-width: 880px) {
     .flex-container{
         @include flex (column, center, center);
+        flex-wrap: wrap;
         width: 100%;
         form{
             width: 100%;
             .form-input{
                 width: 100%;
+                
             }
         }
         .form-img{
             width: 100%;
-            margin: 0;
+            
             padding: 0.2em;
             iframe{
                 width: 100%;
+                margin: 2em ;
             }
         }
     }

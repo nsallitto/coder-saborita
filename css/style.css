@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  background-color: #e2c99f;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -7,12 +11,14 @@ h1 {
   text-align: center;
   font-size: 5em;
   margin-top: 0.5em;
+  color: #353437;
 }
 
 h2 {
   text-align: center;
   font-size: 2em;
   margin: 1.5em;
+  color: #353437;
 }
 
 * {
@@ -21,82 +27,18 @@ h2 {
   box-sizing: border-box;
 }
 
-.nav__responsive {
-  display: none;
-}
-
 nav {
-  background-color: slateblue;
+  background-color: #e2c99f;
+  height: 8em;
 }
-nav .nav__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-nav .nav__container .nav__logo img {
-  width: 10em;
-}
-nav .nav__container .nav__container-ul .nav__ul .nav__li {
-  display: inline-block;
-  padding: 1em;
-  color: white;
-}
-nav .nav__container .nav__container-ul .nav__ul .nav__li a {
-  color: white;
-  text-decoration: none;
-}
-nav .nav__container .nav__container-ul .nav__ul .nav__li i {
-  width: 1.5em;
-  box-sizing: border-box;
+nav div div {
+  background-color: #a39b7e;
 }
 
-.nav__responsive .cont {
-  display: flex;
-  justify-content: space-between;
-}
-.nav__responsive .cont .nav__responsive-logo img {
-  width: 10em;
-}
-.nav__responsive .cont .nav__responsive-container .nav__responsive-ul .nav__responsive-boton {
-  float: right;
-  font-size: 2em;
-  padding: 1em 2em;
-  text-decoration: none;
-  color: white;
-}
-.nav__responsive .cont .nav__responsive-container .nav__responsive-ul .responsive__conteiner-li {
-  display: inline-block;
-  text-decoration: none;
-  position: relative;
-  margin-top: 3em;
-  top: -50em;
-}
-.nav__responsive .cont .nav__responsive-container .nav__responsive-ul .responsive__conteiner-li .nav__responsive-li {
-  color: white;
-  padding: 0.5em;
-  text-decoration: none;
-}
-.nav__responsive .cont .nav__responsive-container .nav__responsive-ul .responsive__conteiner-li .nav__responsive-li i {
-  color: white;
-}
-.nav__responsive .cont .nav__responsive-container .nav__responsive-ul .responsive__conteiner-li .nav__responsive-li a {
-  text-decoration: none;
-  color: white;
+.logo {
+  height: 5em;
 }
 
-.nav__responsive-boton :hover > .responsive__conteiner-li {
-  top: 0;
-}
-
-@media only screen and (max-width: 880px) {
-  .nav {
-    display: none;
-  }
-  .nav__responsive {
-    display: block;
-    background-color: slateblue;
-  }
-}
 footer div {
   display: flex;
   flex-direction: row;
@@ -128,6 +70,10 @@ footer div :hover {
   text-align: center;
   margin: 1em;
 }
+.home1 div h2 a {
+  text-decoration: none;
+  color: #353437;
+}
 
 .h2Home {
   margin: 2em;
@@ -145,7 +91,7 @@ footer div :hover {
 .home2 .homeDiv {
   height: 30em;
   width: 15em;
-  border: solid 0.3em rgba(20, 19, 19, 0.712);
+  border: solid 0.3em #353437;
   padding: 0.3em;
   border-radius: 0.5em;
   box-shadow: 0.3em 0.3em rgba(44, 37, 37, 0.103);
@@ -171,7 +117,7 @@ footer div :hover {
   margin-top: 10em;
 }
 .servicios div {
-  height: 15em;
+  height: 25em;
   width: 16em;
   border: solid 0.2em;
   border-radius: 0.5em;
@@ -184,7 +130,7 @@ footer div :hover {
 .servicios div img {
   object-fit: cover;
   width: 100%;
-  height: 85%;
+  height: 70%;
 }
 
 @media only screen and (max-width: 880px) {
@@ -193,9 +139,10 @@ footer div :hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
   .servicios div {
-    margin: auto;
+    margin: 2em;
     margin-top: 1em;
   }
 }
@@ -326,6 +273,7 @@ footer div :hover {
     border-radius: 0.5em;
     width: 50vw;
     height: 20em;
+    overflow: auto;
   }
   .carta .foto1 img {
     object-fit: cover;
@@ -337,6 +285,7 @@ footer div :hover {
     border-radius: 0.5em;
     width: 50vw;
     height: 20em;
+    overflow: auto;
   }
   .carta .foto2 img {
     object-fit: cover;
@@ -348,6 +297,7 @@ footer div :hover {
     border-radius: 0.5em;
     width: 50vw;
     height: 20em;
+    overflow: auto;
   }
   .carta .foto3 img {
     object-fit: cover;
@@ -359,6 +309,7 @@ footer div :hover {
     border-radius: 0.5em;
     width: 50vw;
     height: 20em;
+    overflow: auto;
   }
   .carta .foto4 img {
     object-fit: cover;
@@ -370,6 +321,7 @@ footer div :hover {
     border-radius: 0.5em;
     width: 50vw;
     height: 20em;
+    overflow: auto;
   }
   .carta .foto5 img {
     object-fit: cover;
@@ -381,6 +333,7 @@ footer div :hover {
     border-radius: 0.5em;
     width: 50vw;
     height: 20em;
+    overflow: auto;
   }
   .carta .foto6 img {
     object-fit: cover;
@@ -392,6 +345,7 @@ footer div :hover {
     border-radius: 0.5em;
     width: 50vw;
     height: 20em;
+    overflow: auto;
   }
   .carta .foto7 img {
     object-fit: cover;
@@ -405,9 +359,9 @@ footer div :hover {
 .flex-container {
   display: flex;
   align-items: center;
-  flex-flow: wrap;
+  flex-wrap: wrap;
   justify-content: center;
-  background-color: #283d3e;
+  background-color: #a39b7e;
   margin: 4em;
 }
 .flex-container form {
@@ -420,18 +374,19 @@ footer div :hover {
   padding: 0.2em;
   margin: 0.1em;
   border: none;
-  border-bottom: 0.1em solid red;
-  background: linear-gradient(to bottom, transparent, #48586f);
+  border-bottom: 0.1em solid #353437;
+  background: linear-gradient(to bottom, transparent, #e2c99f);
 }
 .flex-container form .form-input:hover {
-  background-color: aqua;
+  background-color: #53576b;
   outline: none;
   border-bottom: 0.1em solid rgb(22, 6, 6);
 }
 .flex-container form .enviar {
-  background-color: #48586f;
+  border-bottom: 0.1em solid #353437;
   border-bottom: none;
   padding: 0.5em;
+  background: linear-gradient(to bottom, transparent, #e2c99f);
 }
 .flex-container form textarea {
   min-height: 8em;
@@ -453,6 +408,7 @@ footer div :hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
   }
   .flex-container form {
@@ -463,11 +419,11 @@ footer div :hover {
   }
   .flex-container .form-img {
     width: 100%;
-    margin: 0;
     padding: 0.2em;
   }
   .flex-container .form-img iframe {
     width: 100%;
+    margin: 2em;
   }
 }
 

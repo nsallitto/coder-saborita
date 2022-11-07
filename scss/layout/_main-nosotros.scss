@@ -10,9 +10,14 @@
     div{
         text-align: center;
         margin: 1em;
+        h2 a{
+            text-decoration: none;
+            color: #353437
+        }
     }
 
 }
+
 .h2Home{
     margin:2em;
     margin-top: 4em;
@@ -24,7 +29,7 @@
     .homeDiv{
         height: 30em;
         width: 15em;
-        border: solid 0.3em rgba(20, 19, 19, 0.712);
+        border: solid 0.3em #353437;
         padding: 0.3em;
         border-radius: 0.5em;
         box-shadow: 0.3em 0.3em rgba(44, 37, 37, 0.103);
